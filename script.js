@@ -4,7 +4,13 @@ const descricao = document.getElementById("descricao");
 const botao = document.getElementById("botao");
 
 botao.addEventListener("click", function() {
-    console.log("Produto:", produto.value);
-    console.log("Valor:", valor.value);
-    console.log("Descrição:", descricao.value);
+
+    const dadosProduto = {
+        produto: produto.value,
+        valor: valor.value,
+        descricao: descricao.value
+    };
+
+    console.log(dadosProduto);
 });
+
