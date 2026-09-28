@@ -12,5 +12,14 @@ botao.addEventListener("click", function() {
     };
 
     console.log(dadosProduto);
+
+    fetch("https://httpbin.org/post", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(dadosProduto)
+});
+
 });
 
