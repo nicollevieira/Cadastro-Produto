@@ -24,6 +24,10 @@ botao.addEventListener("click", function() {
     .then(function(resposta) {
         if (resposta.ok) {
             feedback.innerText = "Produto cadastrado com sucesso!";
+
+            produto.value = "";
+            valor.value = "";
+            descricao.value = "";
         } else {
             feedback.innerText = "Não foi possível cadastrar o produto.";
         }
